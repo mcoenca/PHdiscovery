@@ -6,3 +6,11 @@
 meteor-platform
 autopublish
 insecure
+aldeed:collection2
+channikhabra:stupid-models
+iron:router
+mrt:moment
+raix:handlebar-helpers
+reywood:bootstrap3-sass
+accounts-password
+
