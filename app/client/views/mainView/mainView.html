@@ -1,5 +1,38 @@
 <template name="mainView">
-  <div class="content">
-  <h3>This is where the content goes</h3>
+  <form class="form-search">
+    <div class="content container">
+      <div class="row">
+        <div class="col-xs-3">
+          <input class="form-control" type="text" id="search_field" placeholder="Search" maxlength="14">
+        </div>         
+        <div class="col-xs-1">
+          <input class="form-control" type="number" id="page_field" placeholder="Page" maxlength="14">
+        </div>        
+        <div class="col-xs-4">
+          <button class="btn btn-warning" type="button" id="search">Search</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  {{debug}}
+  {{#each products}}
+    {{> product}}
+  {{/each}}
+</template>
+
+<template name="product">
+  <div class="row">
+    <div class="col-xs-2">
+    {{name}}
+    </div>    
+    <div class="col-xs-3">
+    {{tagline}} 
+    </div>    
+    <div class="col-xs-3">
+    {{vote_count}} 
+    </div>    
+    <div class="col-xs-3">
+    {{url}}
+    </div>
   </div>
 </template>
